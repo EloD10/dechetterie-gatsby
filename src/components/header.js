@@ -43,10 +43,10 @@ class Header extends React.Component {
                     </Link>
                     <nav id="hamburger-menu" className="hidden md:block flex-1 text-blue-darker text-center px-4 py-2 m-2 align-center">
                         <div className="flex space-between mx-4 flex-col md:flex-row uppercase justify-center">
-                            <Link to="/" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lighter rounded-full border-b-4 border-transparent">Accueil</Link>
-                            <Link to="/equipements" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lighter rounded-full border-b-4 border-transparent">Nos équipements</Link>
-                            <Link to="/ids-collect" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lighter rounded-full border-b-4 border-transparent">Collectes des déchets</Link>
-                            <Link to="/a-propos" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lighter rounded-full border-b-4 border-transparent">À propos</Link>
+                            <Link to="/" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lightest rounded-full border-b-4 border-transparent">Accueil</Link>
+                            <Link to="/equipements" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lightest rounded-full border-b-4 border-transparent">Nos équipements</Link>
+                            <Link to="/ids-collect" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lightest rounded-full border-b-4 border-transparent">Collectes des déchets</Link>
+                            <Link to="/a-propos" activeClassName="text-blue-lightest" css={linksAnimation} className="p-4 lg:mx-16 text-blue-darker font-semibold hover:text-blue-lightest no-underline hover:border-blue-lightest rounded-full border-b-4 border-transparent">À propos</Link>
                         </div>
                     </nav>
             </header>
