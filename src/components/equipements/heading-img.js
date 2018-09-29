@@ -27,6 +27,6 @@ export default (props) => (
         <div className="" css={containerImg}>
             <Img css={styleImg} fluid={props.img}  className="shadow-inner" alt="randy-laybourne"/>
         </div>
-        <h1 className="text-white absolute text-5xl pin-t mt-2 ml-2 md:mt-8 md:ml-8" css={textImg}>{props.title}</h1>
+        <h1 className="text-white absolute text-5xl pin-t mt-2 ml-2 md:mt-8 md:ml-8 p-2 font-slab" css={textImg}>{props.title}</h1>
     </div>
 )
