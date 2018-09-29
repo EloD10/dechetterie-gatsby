@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-
 export default (props) => (
 <article className="py-8 mx-4 md:mx-24">
     <div className="flex flex-col md:flex-row">
