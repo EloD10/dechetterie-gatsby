@@ -1,11 +1,9 @@
 import React from "react";
 
 import { Link } from "gatsby";
-import productImg from "../../images/equipements/dechets-ordinaires.jpg";
 
 const cardImg = {
   position: "relative",
-  backgroundImage: `url(${productImg})`,
   backgroundPosition: "center",
   transition: "all .5s",
   overflow: "hidden",
@@ -18,7 +16,7 @@ export default props => (
         className="h-full bg-cover rounded lg:rounded-t-none lg:rounded-l text-center border"
         css={cardImg}
         style={{ backgroundImage: `url(${props.img})` }}
-        title="ordinary-waste"
+        title={props.altImg}
       />
     </div>
     <div className="relative border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">

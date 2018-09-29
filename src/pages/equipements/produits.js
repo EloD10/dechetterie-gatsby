@@ -2,16 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 
 import Layout from "../../components/layout";
-// import NavClientsType from "../../components/equipements/nav-clients-type";
 import ProductCardImgLeft from "../../components/equipements/product-card-img-left";
-// import NavProductsType from "../../components/equipements/navProductType/nav-products-type";
 
 const Category = ({ data }) => {
   const { edges: products } = data.allMarkdownRemark;
   return (
     <Layout>
-      {/* <NavClientsType /> */}
-      {/* <NavProductsType /> */}
       <div className="flex flex-col mx-4 md:mx-16 mt-8 justify-center">
         {products.map(({ node: product }) => {
           const { frontmatter } = product;
@@ -19,6 +15,7 @@ const Category = ({ data }) => {
             <ProductCardImgLeft
                 link={frontmatter.path}
                 img={frontmatter.image.childImageSharp.fluid.src}
+                altImg={frontmatter.title}
                 title={frontmatter.title}
                 body={frontmatter.excerpt}
             />
@@ -44,7 +41,7 @@ export const query = graphql`
             path
             image {
               childImageSharp {
-                fluid {
+                fluid(maxWidth: 300) {
                   src
                 }
               }
