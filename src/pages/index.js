@@ -36,7 +36,6 @@ class Index extends React.Component {
                 srcImg={this.props.data.imageZero.childImageSharp.fluid.src}
                 altImg="ecologie"
                 />
-                {/* <Img fluid={this.props.data.imageOne.childImageSharp.fluid} /> */}
             </Layout>
         )
     }

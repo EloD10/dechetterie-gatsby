@@ -3,17 +3,15 @@ import { graphql, Link } from 'gatsby'
 
 
 // Components
-// import NavClientsType from "../components/equipements/nav-clients-type";
 import HeadingImg from "../components/equipements/heading-img";
 import WasteTypeCardImgLeft from "../components/equipements/waste-type-card-img-left";
-// import WasteTypeCardImgRight from "../components/equipements/waste-type-card-img-right";
 import Layout from "../components/layout";
 
 
 export default (props) => (
 <Layout>
     <HeadingImg 
-        img={props.data.headerImg.childImageSharp.fluid.src}
+        img={props.data.headerImg.childImageSharp.fluid}
         title="Nos outils qui vous rendent efficace"
     />
     <div className="list-reset flex mt-8 mx-4 md:mx-16 justify-center">
