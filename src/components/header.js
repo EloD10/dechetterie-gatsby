@@ -30,11 +30,11 @@ class Header extends React.Component {
     render() {
         return (
             <header className="flex flex-col md:flex-row bg-green shadow">
-                    <Link to="/" className="flex text-green-lighter text-center m-2 flex-col p-4 no-underline">
+                    <Link to="/" className="flex text-green-lighter text-center m-2 flex-col p-4 no-underline outline-none">
                         <div className="flex justify-between">
                             <div className="flex flex-col">
                                 <h3 className="font-semibold">IDS ENVIRONNEMENT</h3>
-                                <h4 className="uppercase font-thin text-xs tracking-tight">Les idées vertes</h4>
+                                <h4 className="uppercase text-green-lightest font-light text-xs tracking-tight">Les idées vertes</h4>
                             </div>
                             <div className="md:hidden hover:text-blue-lightest" onClick={this.handleClick}>
                                 <svg className="fill-current h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
